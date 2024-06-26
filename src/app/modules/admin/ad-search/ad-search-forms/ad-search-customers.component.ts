@@ -11,11 +11,11 @@ import { AuthService } from 'app/core/auth/auth.service';
 import { CustomerInfo, CustomerParams } from 'app/modules/_modules/customerclasses';
 import { EscrowList } from 'app/modules/_modules/escrowclasses';
 import { LoginUser } from 'app/modules/_modules/loginclasses';
-import { CustomerService } from 'app/modules/_services/customer/custinfo.service';
-import { DService } from 'app/modules/_services/dialog/dlgsvc.service';
-import { GlobalFunctionsService } from 'app/modules/_services/globalfunc/gfinfo.service';
-import { MiscService } from 'app/modules/_services/misc/miscinfo.service';
-import { TokenStorageService } from 'app/modules/_services/tokenstorage/tsinfo.service';
+import { CustomerService } from 'app/modules/_services/custinfo.service';
+import { DService } from 'app/modules/_services/dlgsvc.service';
+import { GlobalFunctionsService } from 'app/modules/_services/gfinfo.service';
+import { MiscService } from 'app/modules/_services/miscinfo.service';
+import { TokenStorageService } from 'app/modules/_services/tsinfo.service';
 
 @Component({
     selector     : 'ad-search-customers',
