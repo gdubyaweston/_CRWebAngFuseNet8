@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { User } from 'app/core/user/user.types';
 import { map, Observable, ReplaySubject, tap } from 'rxjs';
 
@@ -40,7 +40,7 @@ export class UserService
     // -----------------------------------------------------------------------------------------------------
 
     /**
-     * Get the current signed-in user data
+     * Get the current logged in user data
      */
     get(): Observable<User>
     {

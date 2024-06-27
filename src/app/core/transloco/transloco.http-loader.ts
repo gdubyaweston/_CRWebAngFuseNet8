@@ -1,12 +1,18 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Translation, TranslocoLoader } from '@ngneat/transloco';
 import { Observable } from 'rxjs';
 
 @Injectable({providedIn: 'root'})
 export class TranslocoHttpLoader implements TranslocoLoader
 {
-    private _httpClient = inject(HttpClient);
+    /**
+     * Constructor
+     */
+    constructor(
+        private _httpClient: HttpClient)
+    {
+    }
 
     // -----------------------------------------------------------------------------------------------------
     // @ Public methods

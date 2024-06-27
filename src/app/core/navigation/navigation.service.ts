@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Navigation } from 'app/core/navigation/navigation.types';
 import { Observable, ReplaySubject, tap } from 'rxjs';
 
