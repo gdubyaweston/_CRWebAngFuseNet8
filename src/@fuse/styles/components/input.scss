@@ -19,22 +19,20 @@ textarea {
         @apply text-hint;
     }
 
-    /* Autofill color fix */
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus,
-    &:-webkit-autofill:active {
-        -webkit-background-clip: text;
-        transition: background-color 5000s !important;
+    &:-webkit-autofill {
+        transition: background-color 600000s 0s, color 600000s 0s !important;
     }
 
-    .dark & {
-        &:-webkit-autofill,
-        &:-webkit-autofill:hover,
-        &:-webkit-autofill:focus,
-        &:-webkit-autofill:active {
-            -webkit-text-fill-color: rgba(255, 255, 255, 0.87);
-        }
+    &:-webkit-autofill:hover {
+        transition: background-color 600000s 0s, color 600000s 0s !important;
+    }
+
+    &:-webkit-autofill:focus {
+        transition: background-color 600000s 0s, color 600000s 0s !important;
+    }
+
+    &:-webkit-autofill:active {
+        transition: background-color 600000s 0s, color 600000s 0s !important;
     }
 
     [data-autocompleted] {
